@@ -27,6 +27,7 @@
 		"@rive-app/canvas": "^1.0.98",
 		"solid-js": "^1.5.7"
 	},
+	"packageManager": "^pnpm@7.27.0",
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
 		"@typescript-eslint/eslint-plugin": "^5.39.0",
