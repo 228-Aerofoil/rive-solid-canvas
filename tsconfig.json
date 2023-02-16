@@ -1,0 +1,24 @@
+{
+	"include": [".eslintrc.cjs", "src/**/*"],
+	"compilerOptions": {
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"baseUrl": ".",
+		"alwaysStrict": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"preserveConstEnums": true,
+		"sourceMap": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": false,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitAny": true,
+		"allowUmdGlobalAccess": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"noErrorTruncation": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
+}
