@@ -1,11 +1,11 @@
 {
 	"name": "rive-solid-canvas",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"description": "unofficial solidjs wrapper around the rive-js library",
 	"main": "dist/index.js",
-	"types": "types/index.d.ts",
 	"files": [
-		"dist/**"
+		"dist/**",
+		"types"
 	],
 	"scripts": {
 		"build": "tsc",
@@ -26,6 +26,9 @@
 	"dependencies": {
 		"@rive-app/canvas": "^1.0.98",
 		"solid-js": "^1.5.7"
+	},
+	"exports": {
+		"./dist/*": "./dist/*"
 	},
 	"packageManager": "^pnpm@7.27.0",
 	"devDependencies": {
