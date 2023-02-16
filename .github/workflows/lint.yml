@@ -2,10 +2,12 @@ name: Lint
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - "*"
 
 jobs:
-  build:
+  initialize:
+    name: initialize
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,5 +16,10 @@ jobs:
           version: 7.27.0
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
+  lint:
+    needs: initialize
+    runs-on: ubuntu-latest
+    name: lint
+    steps:
       - name: Run lint
         run: npm run lint
