@@ -1,13 +1,26 @@
-name: Lint
+name: validate
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - "*"
 
 jobs:
-  build:
+  lint-and-typecheck:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        pnpm-version: [7.27.0]
+
     steps:
       - uses: actions/checkout@v2
-      - name: Run lint
+      - uses: pnpm/action-setup@v2
+        with:
+          version: ${{ matrix.pnpm-version }}
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Lint
         run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
