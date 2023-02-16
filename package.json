@@ -23,7 +23,12 @@
 		"url": "https://github.com/228-Aerofoil/rive-solid-canvas/issues"
 	},
 	"homepage": "https://github.com/228-Aerofoil/rive-solid-canvas#readme",
+	"dependencies": {
+		"@rive-app/canvas": "^1.0.98",
+		"solid-js": "^1.5.7"
+	},
 	"devDependencies": {
+		"@babel/core": "^7.20.12",
 		"@typescript-eslint/eslint-plugin": "^5.39.0",
 		"@typescript-eslint/parser": "^5.39.0",
 		"eslint": "^8.25.0",
@@ -34,7 +39,6 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-solid": "^0.7.3",
 		"prettier": "^2.7.1",
-		"typescript": "^4.9.5",
-		"watch": "^1.0.2"
+		"typescript": "^4.9.5"
 	}
 }
