@@ -1,17 +1,18 @@
 {
-	"name": "rive-solid-canvas",
-	"version": "0.0.1",
+	"name": "@aerofoil/rive-solid-canvas",
+	"version": "0.0.0",
 	"description": "unofficial solidjs wrapper around the rive-js library",
 	"main": "dist/index.js",
-	"types": "types/index.d.ts",
 	"files": [
-		"dist/**"
+		"dist/**",
+		"types"
 	],
 	"scripts": {
-		"build": "tsc",
-		"typecheck": "npx tsc",
+		"build": "npx tsc",
+		"typecheck": "npx tsc --noEmit",
 		"lint": "npx eslint . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
-		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx"
+		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
+		"publish": "pnpm run build && pnpm publish"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +27,9 @@
 	"dependencies": {
 		"@rive-app/canvas": "^1.0.98",
 		"solid-js": "^1.5.7"
+	},
+	"exports": {
+		"./dist/*": "./dist/*"
 	},
 	"packageManager": "^pnpm@7.27.0",
 	"devDependencies": {
