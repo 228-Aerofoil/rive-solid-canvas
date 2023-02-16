@@ -16,14 +16,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/228-Aerofoil/rive-solid-canvas.git"
 	},
 	"author": "Michael Kassabov",
 	"license": "MIT",
 	"bugs": {
-		"url": ""
+		"url": "https://github.com/228-Aerofoil/rive-solid-canvas/issues"
 	},
-	"homepage": "",
+	"homepage": "https://github.com/228-Aerofoil/rive-solid-canvas#readme",
 	"dependencies": {},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.39.0",
