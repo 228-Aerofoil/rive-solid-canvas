@@ -6,20 +6,21 @@ on:
       - "*"
 
 jobs:
-  initialize:
-    name: initialize
+  validate:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        pnpm-version: [7.27.0]
+
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2
         with:
-          version: 7.27.0
+          version: ${{ matrix.pnpm-version }}
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
-  lint:
-    needs: initialize
-    runs-on: ubuntu-latest
-    name: lint
-    steps:
-      - name: Run lint
+      - name: Lint
         run: npm run lint
+      - name: Typecheck
+        run: npm run typecheck
