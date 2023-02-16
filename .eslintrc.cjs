@@ -4,6 +4,7 @@ module.exports = {
 		es2021: true,
 		node: true,
 	},
+	ignorePatterns: ["types/**", "dist/**"],
 	extends: [
 		"eslint:recommended",
 		"plugin:jsx-a11y/strict",
