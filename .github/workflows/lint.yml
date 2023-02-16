@@ -1,4 +1,4 @@
-name: Lint
+name: Validate
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - "*"
 
 jobs:
-  validate:
+  lint-and-typecheck:
     runs-on: ubuntu-latest
 
     strategy:
