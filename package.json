@@ -1,12 +1,13 @@
 {
 	"name": "@aerofoil/rive-solid-canvas",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"description": "unofficial solidjs wrapper around the rive-js library",
 	"main": "dist/index.js",
 	"files": [
 		"dist/**",
 		"types"
 	],
+	"types": "types/index.d.ts",
 	"scripts": {
 		"build": "npx tsc",
 		"typecheck": "npx tsc --noEmit",
