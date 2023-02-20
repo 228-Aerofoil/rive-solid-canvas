@@ -11,5 +11,6 @@ export function createRiveInputMap(
 			?.reduce((acc, input) => {
 				acc.set(input.name, input);
 				return acc;
-			}, new Map<string, StateMachineInput>());
+			}, new Map<string, StateMachineInput>()) ??
+		new Map<string, StateMachineInput>();
 }
