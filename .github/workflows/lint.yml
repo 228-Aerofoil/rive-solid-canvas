@@ -9,15 +9,11 @@ jobs:
   lint-and-typecheck:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        pnpm-version: [7.27.0]
-
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2
         with:
-          version: ${{ matrix.pnpm-version }}
+          version: latest
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Lint

@@ -1,24 +1,25 @@
 name: publish
 
 on:
-  push:
-    branches:
-      - "main"
+  release:
+    types: [published]
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        pnpm-version: [7.27.0]
-
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2
         with:
-          version: ${{ matrix.pnpm-version }}
+          version: latest
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Publish
         run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
