@@ -1,6 +1,6 @@
 {
 	"name": "@aerofoil/rive-solid-canvas",
-	"version": "1.0.10",
+	"version": "1.1.0",
 	"description": "unofficial solidjs wrapper around the rive-js library",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
@@ -10,7 +10,7 @@
 	],
 	"types": "types/index.d.ts",
 	"scripts": {
-		"build": "npx tsc && npx tsc-alias",
+		"build": "vite build",
 		"typecheck": "npx tsc --noEmit",
 		"lint": "npx eslint . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
 		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
@@ -33,7 +33,8 @@
 	},
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
+			"import": "./dist/index.mjs",
+			"require": "./dist/solid.cjs",
 			"types": "./types/index.d.ts"
 		},
 		"./dist/*": "./dist/*"
@@ -46,7 +47,7 @@
 	],
 	"packageManager": "^pnpm@7.27.0",
 	"devDependencies": {
-		"@babel/core": "^7.20.12",
+		"@types/node": "^18.14.0",
 		"@typescript-eslint/eslint-plugin": "^5.39.0",
 		"@typescript-eslint/parser": "^5.39.0",
 		"eslint": "^8.25.0",
@@ -57,7 +58,9 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-solid": "^0.7.3",
 		"prettier": "^2.7.1",
-		"tsc-alias": "^1.8.2",
-		"typescript": "^4.9.5"
+		"typescript": "^4.9.5",
+		"vite": "^4.1.3",
+		"vite-plugin-dts": "2.0.0-beta.2",
+		"vite-plugin-solid": "^2.5.0"
 	}
 }
