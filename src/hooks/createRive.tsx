@@ -5,9 +5,7 @@ import type { Accessor } from "solid-js";
 
 export type CanvasProps = JSX.CanvasHTMLAttributes<HTMLCanvasElement>;
 
-export interface CreateRiveParameters extends Omit<RiveParameters, "canvas"> {
-	useDevicePixelRatio?: boolean;
-}
+export type CreateRiveParameters = Omit<RiveParameters, "canvas">;
 
 export function createRive(riveParameters: Accessor<CreateRiveParameters>) {
 	const [rive, setRive] = createSignal<InternalRive>();
