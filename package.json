@@ -1,8 +1,9 @@
 {
 	"name": "@aerofoil/rive-solid-canvas",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "unofficial solidjs wrapper around the rive-js library",
-	"main": "dist/index.js",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
 	"files": [
 		"dist/**",
 		"types"
@@ -31,8 +32,18 @@
 		"solid-js": "^1.5.7"
 	},
 	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./types/index.d.ts"
+		},
 		"./dist/*": "./dist/*"
 	},
+	"keywords": [
+		"rive",
+		"solid",
+		"solidjs",
+		"animation"
+	],
 	"packageManager": "^pnpm@7.27.0",
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
