@@ -9,3 +9,7 @@ pnpm-debug.log*
 
 # Snyk
 .dccache
+
+# build output
+dist/
+types/
