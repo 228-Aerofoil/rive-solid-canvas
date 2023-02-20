@@ -23,7 +23,7 @@ npm install @aerofoil/rive-solid-canvas
 Rive-Solid-Canvas provides a basic component just like the official Rive React library. Just like the official library this is designed to be a simple usecase for simple animations.
 
 ```tsx
-import Rive from "@rive-app/react-canvas";
+import Rive from "@aerofoil/rive-solid-canvas";
 
 export default function Simple() {
 	return <Rive src="https://cdn.rive.app/animations/vehicles.riv" />;
@@ -35,7 +35,7 @@ export default function Simple() {
 More advanced cases should use `createRive` to create a custom component. This allows for more control over the animation, canvas, and underlying rive object.
 
 ```tsx
-import { createRive } from "@rive-app/react-canvas";
+import { createRive } from "@aerofoil/rive-solid-canvas";
 
 export default function Advanced() {
 	const { rive, RiveComponent } = createRive(() => ({
@@ -75,7 +75,7 @@ Props
 The typescript prop type for this component can be imported using
 
 ```ts
-import type { RiveProps } from "@rive-app/react-canvas";
+import type { RiveProps } from "@aerofoil/rive-solid-canvas";
 ```
 
 ### `createRive()`
@@ -85,7 +85,7 @@ This function takes a single argument, a solidjs accessor returning all the `Riv
 For convenience the type `CreateRiveParameters` and can be imported using
 
 ```ts
-import type { CreateRiveParameters } from "@rive-app/react-canvas";
+import type { CreateRiveParameters } from "@aerofoil/rive-solid-canvas";
 ```
 
 The return value is an object with the following properties
