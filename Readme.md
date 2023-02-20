@@ -141,3 +141,5 @@ This is a quick project to serve our needs. There isn't much to go wrong or much
   - [Rive Documentation](https://help.rive.app/)
 
 ## License
+
+[MIT](LICENSE)
