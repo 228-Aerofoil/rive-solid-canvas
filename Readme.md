@@ -133,3 +133,11 @@ Returns an accessor for a map with the keys being the input names and the values
 This is a quick project to serve our needs. There isn't much to go wrong or much to maintain. This should act more as a todo list; there is no given timeline for when these will be worked on
 
 - Add typesafety. Currently this relies on the typesafety of rive as it is, ideally it would be possible to define the available animations, state machines, statemachine inputs, etc. To prevent invalid names from being passed into input generators.
+
+## Credits
+
+- [SolidJS](https://www.solidjs.com/)
+- [Rive](https://rive.app/)
+  - [Rive Documentation](https://help.rive.app/)
+
+## License
