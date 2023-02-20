@@ -19,9 +19,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
-      - name: Build
-        run: pnpm build
       - name: Publish
-        run: npm publish --no-git-checks
+        run: pnpm publish:ga
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -11,7 +11,8 @@
 		"build": "npx tsc",
 		"typecheck": "npx tsc --noEmit",
 		"lint": "npx eslint . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
-		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx"
+		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
+		"publish:ga": "pnpm run build && pnpm publish --no-git-checks"
 	},
 	"repository": {
 		"type": "git",
