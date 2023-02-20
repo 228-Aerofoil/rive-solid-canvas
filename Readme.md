@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@aerofoil/rive-solid-canvas)](https://www.npmjs.com/package/@aerofoil/rive-solid-canvas)
 [![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/228-Aerofoil/rive-solid-canvas)](https://snyk.io/test/github/228-Aerofoil/rive-solid-canvas)
 
-This is an unofficial wrapper of the Rive Canvas Runtime for SolidJS. Syntactically it is designed to be similar ot the official Rive Runtime for React; that being said it is not a 1 to 1 match. See the [comparison](#comparison) section for more details.
+This is an unofficial wrapper of the Rive Canvas Runtime for SolidJS. Syntactically it is designed to be similar to the official Rive Runtime for React; that being said it is not a 1 to 1 match. See the [comparison](#comparison) section for more details.
 
 1. [Getting Started](#getting-started)
 2. [Advanced Usage](#advanced-usage)
