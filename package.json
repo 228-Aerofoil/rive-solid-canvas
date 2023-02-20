@@ -13,7 +13,7 @@
 		"typecheck": "npx tsc --noEmit",
 		"lint": "npx eslint . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
 		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
-		"publish": "pnpm run build && pnpm publish",
+		"publish:local": "pnpm run build && pnpm publish",
 		"publish:ga": "pnpm run build && pnpm publish --no-git-checks"
 	},
 	"repository": {
