@@ -2,7 +2,7 @@
 	"name": "@aerofoil/rive-solid-canvas",
 	"version": "1.0.7",
 	"description": "unofficial solidjs wrapper around the rive-js library",
-	"main": "dist/index.js",
+	"main": "dist/index.jss",
 	"files": [
 		"dist/**",
 		"types"
