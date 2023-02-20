@@ -1,6 +1,6 @@
 {
 	"name": "@aerofoil/rive-solid-canvas",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "unofficial solidjs wrapper around the rive-js library",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
@@ -10,7 +10,7 @@
 	],
 	"types": "types/index.d.ts",
 	"scripts": {
-		"build": "npx tsc",
+		"build": "npx tsc && npx tsc-alias",
 		"typecheck": "npx tsc --noEmit",
 		"lint": "npx eslint . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
 		"lint:fix": "npx eslint --fix . --ext .cjs,.mjs,.js,.jsx,.ts,.tsx",
@@ -57,6 +57,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-solid": "^0.7.3",
 		"prettier": "^2.7.1",
+		"tsc-alias": "^1.8.2",
 		"typescript": "^4.9.5"
 	}
 }
