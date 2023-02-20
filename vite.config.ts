@@ -6,12 +6,11 @@ import pkg from "./package.json";
 
 export default defineConfig({
 	plugins: [
-		solidPlugin(),
 		dts({
 			tsConfigFilePath: "tsconfig.json",
 			outputDir: path.resolve(__dirname, "types"),
-			skipDiagnostics: true,
 		}),
+		solidPlugin(),
 	],
 	resolve: {
 		alias: {
