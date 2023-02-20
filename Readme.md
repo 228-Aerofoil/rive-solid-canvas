@@ -1,10 +1,14 @@
 # Rive-Solid-Canvas
 
-<!-- todo batches -->
+[![npm version](https://badge.fury.io/js/@aerofoil%2Frive-solid-canvas.svg)](https://badge.fury.io/js/@aerofoil%2Frive-solid-canvas)
+[![Known Vulnerabilities](https://snyk.io/test/github/228-Aerofoil/rive-solid-canvas/badge.svg)](https://snyk.io/test/github/228-Aerofoil/rive-solid-canvas)
 
-This is an unofficial wrapper of the Rive Canvas Runtime for SolidJS. Syntactically it is designed to be similar ot the official Rive Runtime for React; that being said it is not a 1 to 1 match. See the comparison section for more details.
+This is an unofficial wrapper of the Rive Canvas Runtime for SolidJS. Syntactically it is designed to be similar ot the official Rive Runtime for React; that being said it is not a 1 to 1 match. See the [comparison](#comparison) section for more details.
 
-<!-- todo index -->
+1. [Getting Started](#getting-started)
+2. [Advanced Usage](#advanced-usage)
+3. [Documentation](#documentation)
+4. [Comparison](#comparison)
 
 ## Getting Started
 
@@ -128,4 +132,4 @@ Returns an accessor for a map with the keys being the input names and the values
 
 This is a quick project to serve our needs. There isn't much to go wrong or much to maintain. This should act more as a todo list; there is no given timeline for when these will be worked on
 
-- [ ] Add typesafety. Currently this relies on the typesafety of rive as it is, ideally it would be possible to define the available animations, state machines, statemachine inputs, etc. To prevent invalid names from being passed into input generators.
+- Add typesafety. Currently this relies on the typesafety of rive as it is, ideally it would be possible to define the available animations, state machines, statemachine inputs, etc. To prevent invalid names from being passed into input generators.
