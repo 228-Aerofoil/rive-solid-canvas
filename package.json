@@ -1,6 +1,6 @@
 {
 	"name": "@aerofoil/rive-solid-canvas",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"description": "unofficial solidjs wrapper around the rive-js library",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
