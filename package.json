@@ -29,7 +29,7 @@
 	"homepage": "https://github.com/228-Aerofoil/rive-solid-canvas#readme",
 	"dependencies": {
 		"@rive-app/canvas": "^2.1.4",
-		"solid-js": "^1.7.8"
+		"solid-js": "^1.9.9"
 	},
 	"exports": {
 		".": {
